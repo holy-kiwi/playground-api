@@ -14,11 +14,9 @@ class PluginDbAgent {
                 TableName: table,
                 Item: {
                     "plugin_id": uuidv4(),
-                    "name": item.name,
                     "authorId": item.authorId,
-                    "description": item.description,
-                    "index_html": item.index_html,
-                    "index_js": item.index_js,
+                    "htmlSource": item.htmlSource,
+                    "jsSource": item.jsSource,
                     "manifest": item.manifest,
                 }
             }

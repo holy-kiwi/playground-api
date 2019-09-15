@@ -9,7 +9,8 @@ export function generateResponse(statusCode, body) {
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Headers": "Content-Type",
-      "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+      "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
+      "Access-Control-Allow-Credentials": true,
     },
     body: JSON.stringify(body, null, 2),
   }
